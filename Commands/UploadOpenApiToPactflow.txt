@@ -1,0 +1,12 @@
+-
+------------------------------------upload openapi specification----------------------------------
+curl -X POST \
+  -H "Authorization: Bearer 0n2qLV7daRXgyNZgWQ0n9w" \
+  -H "Content-Type: application/yaml" \
+  "https://andolasoft.pactflow.io/contracts/provider/UserService/version/1.0.0" \
+  -d @OpenApiFiles/openapi.yml
+
+  --------------------------------------------------Chech uploaded openapi specification----------------------------------
+  curl -X GET \
+    -H "Authorization: Bearer 0n2qLV7daRXgyNZgWQ0n9w" \
+    "https://andolasoft.pactflow.io/contracts/provider/UserService"
